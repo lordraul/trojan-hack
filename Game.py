@@ -13,7 +13,7 @@ win = fontmar.render("Everyone is out of the horse! Let's demolish Troy!", False
 WIDTH = 1080
 HEIGHT = 1080
 
-SSIZE = 70
+SSIZE = 100
 SSPEED = 700 / 60.0
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -33,10 +33,10 @@ bgcolor = Color(130, 72, 17)
 
 soldiers = []
 
-SX = (WIDTH - (8 * SSIZE)) / 2.0
-SY = (HEIGHT - (8 * SSIZE)) / 2.0
+SX = (WIDTH - (6 * SSIZE)) / 2.0
+SY = (HEIGHT - (6 * SSIZE)) / 2.0
 
-grid, e, r = Procedural.Generate((8,8))
+grid, e, r = Procedural.Generate((6,6))
 for r in range(len(grid)):
     for c in range(len(grid[r])):
         if grid[r][c] is not None:

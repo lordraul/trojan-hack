@@ -18,11 +18,11 @@ def Generate(tiles: tuple[int, int] = (10, 10)):
     exitcols = []
 
     for i in range(tiles[0]):
-        if rand.randint(1, 3) != 1:
+        if rand.randint(1, 4) != 1:
             exitrows.append((i, ExitType(rand.randint(0,2))))
      
     for i in range(tiles[1]):
-        if rand.randint(1, 3) != 1:
+        if rand.randint(1, 4) != 1:
             exitcols.append((i, ExitType(rand.randint(0,2))))
     
     grid = [[None for _ in range(tiles[0])] for _ in range(tiles[1])]
